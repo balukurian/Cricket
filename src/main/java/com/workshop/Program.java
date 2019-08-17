@@ -1,5 +1,8 @@
 package com.workshop;
 
+import com.workshop.behaviour.BattingBehaviour;
+import com.workshop.behaviour.BowlingBehavior;
+
 public class Program {
 
     public static void main(String[] args) {

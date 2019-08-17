@@ -1,5 +1,8 @@
 package com.workshop;
 
+import com.workshop.behaviour.BattingBehaviour;
+import com.workshop.behaviour.BowlingBehavior;
+
 public class Player {
 
     protected BattingBehaviour battingBehaviour;

@@ -1,4 +1,6 @@
-package com.workshop;
+package com.workshop.behaviour;
+
+import com.workshop.BatsmanType;
 
 import java.util.Random;
 
