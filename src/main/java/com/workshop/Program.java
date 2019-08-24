@@ -1,7 +1,7 @@
 package com.workshop;
 
 import com.workshop.behaviour.BattingBehaviour;
-import com.workshop.behaviour.BowlingBehavior;
+import com.workshop.behaviour.BowlingBehaviour;
 
 public class Program {
 
@@ -15,16 +15,16 @@ public class Program {
 
         if(batsmanType == 1) {
             game = new CricketGame(overs,score,
-                    new Player(new BattingBehaviour(BatsmanType.HITTER), new BowlingBehavior()),
-                    new Player(new BattingBehaviour(), new BowlingBehavior()));
+                    new Player(new BattingBehaviour(BatsmanType.HITTER), new BowlingBehaviour()),
+                    new Player(new BattingBehaviour(), new BowlingBehaviour()));
         } else if(batsmanType == 0) {
             game = new CricketGame(overs, score,
-                    new Player(new BattingBehaviour(), new BowlingBehavior()),
-                    new Player(new BattingBehaviour(), new BowlingBehavior()));
+                    new Player(new BattingBehaviour(), new BowlingBehaviour()),
+                    new Player(new BattingBehaviour(), new BowlingBehaviour()));
         } else if(batsmanType == 2) {
             game = new CricketGame(overs, score,
-                    new Player(new BattingBehaviour(BatsmanType.DEFENSIVE), new BowlingBehavior()),
-                    new Player(new BattingBehaviour(), new BowlingBehavior()));
+                    new Player(new BattingBehaviour(BatsmanType.DEFENSIVE), new BowlingBehaviour()),
+                    new Player(new BattingBehaviour(), new BowlingBehaviour()));
         }else {
             throw new IllegalArgumentException("Enter a valid batsman");
         }

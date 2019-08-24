@@ -1,7 +1,7 @@
 package com.workshop;
 
 import com.workshop.behaviour.BattingBehaviour;
-import com.workshop.behaviour.BowlingBehavior;
+import com.workshop.behaviour.BowlingBehaviour;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,8 +13,8 @@ public class UmpireTest {
 
     @Before
     public void init() {
-        this.normalBatsman = new Player(new BattingBehaviour(BatsmanType.NORMAL), new BowlingBehavior(BowlerType.NORMAL));
-        this.normalBowler = new Player(new BattingBehaviour(BatsmanType.NORMAL), new BowlingBehavior(BowlerType.NORMAL));
+        this.normalBatsman = new Player(new BattingBehaviour(BatsmanType.NORMAL), new BowlingBehaviour(BowlerType.NORMAL));
+        this.normalBowler = new Player(new BattingBehaviour(BatsmanType.NORMAL), new BowlingBehaviour(BowlerType.NORMAL));
     }
 
     @Test

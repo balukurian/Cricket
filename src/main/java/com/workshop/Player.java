@@ -1,18 +1,23 @@
 package com.workshop;
 
 import com.workshop.behaviour.BattingBehaviour;
-import com.workshop.behaviour.BowlingBehavior;
+import com.workshop.behaviour.BowlingBehaviour;
 
 public class Player {
 
     protected BattingBehaviour battingBehaviour;
-    protected BowlingBehavior bowlingBehavior;
+    protected BowlingBehaviour bowlingBehaviour;
     protected boolean out;
     protected int runs;
 
-    public Player(BattingBehaviour battingBehaviour, BowlingBehavior bowlingBehavior) {
+    public Player() {
+        this.battingBehaviour = new BattingBehaviour();
+        this.bowlingBehaviour = new BowlingBehaviour();
+    }
+
+    public Player(BattingBehaviour battingBehaviour, BowlingBehaviour bowlingBehaviour) {
         this.battingBehaviour = battingBehaviour;
-        this.bowlingBehavior = bowlingBehavior;
+        this.bowlingBehaviour = bowlingBehaviour;
         this.out = false;
     }
 
@@ -21,12 +26,15 @@ public class Player {
     }
 
     public int bowl() {
-        return this.bowlingBehavior.bowl();
+        return this.bowlingBehaviour.bowl();
     }
 
     public int runs() {
         return this.runs;
     }
 
+    public boolean canTakeWickets() {
+        return this.bowlingBehaviour.canTakeWickets();
+    }
 
 }

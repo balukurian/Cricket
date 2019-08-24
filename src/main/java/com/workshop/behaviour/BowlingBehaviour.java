@@ -2,23 +2,16 @@ package com.workshop.behaviour;
 
 import com.workshop.BowlerType;
 
-import java.util.Random;
-
-public class BowlingBehavior {
+public class BowlingBehaviour extends Behaviour {
 
     private int[] possibleRuns = {0, 1, 2, 3, 4, 5, 6, 7};
-    private Random random = new Random();
     private BowlerType bowlerType = BowlerType.NORMAL;
 
-    public BowlingBehavior() {
+    public BowlingBehaviour() {
     }
 
-    public BowlingBehavior(BowlerType bowlerType) {
+    public BowlingBehaviour(BowlerType bowlerType) {
         this.bowlerType = bowlerType;
-    }
-
-    public BowlingBehavior(int[] possibleRuns) {
-        this.possibleRuns = possibleRuns;
     }
 
     public int bowl() {

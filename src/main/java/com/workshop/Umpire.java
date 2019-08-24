@@ -4,7 +4,7 @@ public class Umpire {
 
     public static BallResult decide(int batsmanRun, int bowlerBall, Player batsman, Player bowler) {
 
-        if (bowler.bowlingBehavior.canTakeWickets()) {
+        if (bowler.canTakeWickets()) {
             if (batsman.battingBehaviour.type() == BatsmanType.TAILENDER) {
                 return decideTailEnder(batsmanRun, bowlerBall);
             } else if (batsmanRun == bowlerBall) {
