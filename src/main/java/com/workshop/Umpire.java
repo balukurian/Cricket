@@ -8,7 +8,6 @@ public class Umpire {
             if (batsman.battingBehaviour.type() == BatsmanType.TAILENDER) {
                 return decideTailEnder(batsmanRun, bowlerBall);
             } else if (batsmanRun == bowlerBall) {
-                System.out.println("Batsman is out");
                 return BallResult.WICKET;
             } else {
                 return BallResult.RUN;

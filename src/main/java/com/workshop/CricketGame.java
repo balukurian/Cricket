@@ -24,6 +24,7 @@ public class CricketGame {
             BallResult ballResult = Umpire.decide(run, bowler.bowl(), batsman, bowler);
 
             if (ballResult.equals(BallResult.WICKET)) {
+                System.out.println("Batsman is out");
                 break;
             } else if (ballResult.equals(BallResult.RUN)) {
                 score += run;
