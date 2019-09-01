@@ -4,7 +4,7 @@ import com.workshop.BowlerType;
 
 public class BowlingBehaviour extends Behaviour {
 
-    private int[] possibleRuns = {0, 1, 2, 3, 4, 5, 6, 7};
+    private int[] possibleRuns = {0, 1, 2, 3, 4, 5, 6};
     private BowlerType bowlerType = BowlerType.NORMAL;
 
     public BowlingBehaviour() {
